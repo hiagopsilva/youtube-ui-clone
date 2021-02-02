@@ -44,6 +44,7 @@ const Header: React.FC = () => {
         <IconCamera />
         <IconCube />
         <IconNotification />
+        <IconSearch className="mobile" />
         <Avatar />
       </WrapperRight>
     </Wrapper>

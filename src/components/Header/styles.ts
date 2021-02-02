@@ -8,7 +8,12 @@ import {
   IonIcons,
   getTheme,
   moderateScale,
+  inMobile,
 } from '~/utils';
+
+type PropsIconSearch = {
+  mobile: boolean;
+};
 
 // Colors
 const primaryLight = getTheme('primary.light');
@@ -40,6 +45,11 @@ export const Wrapper = styled.div`
   align-items: center;
 
   padding: 0 ${sceneSpacing}px;
+
+  ${inMobile(`
+    height: ${moderateScale(50)}px;
+    padding: 0  ${moderateScale(10)}px;
+  `)}
 `;
 
 export const WrapperLeft = styled.div`
@@ -70,6 +80,10 @@ export const WrapperCenter = styled.div`
     border-radius: 1px;
     border: 1px solid ${secondaryMain};
   }
+
+  ${inMobile(`
+    display: none
+  `)}
 `;
 
 export const WrapperRight = styled.div`
@@ -80,6 +94,10 @@ export const WrapperRight = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  ${inMobile(`
+    width: ${moderateScale(75)}px;
+  `)}
 `;
 
 export const IconHamburger = styled(GiHamburgerMenu).attrs(props => ({
@@ -87,6 +105,10 @@ export const IconHamburger = styled(GiHamburgerMenu).attrs(props => ({
 }))`
   width: ${moderateScale(10)}px;
   height: ${moderateScale(10)}px;
+
+  ${inMobile(`
+    display: none
+  `)}
 `;
 
 export const IconYouTube = styled(GrYoutube).attrs(props => ({
@@ -94,6 +116,11 @@ export const IconYouTube = styled(GrYoutube).attrs(props => ({
 }))`
   width: ${moderateScale(14)}px;
   height: ${moderateScale(14)}px;
+
+  ${inMobile(`
+    width: ${moderateScale(30)}px;
+    height: ${moderateScale(30)}px;
+  `)}
 `;
 
 export const TitleLogo = styled.h1`
@@ -130,11 +157,22 @@ export const Button = styled.button`
   border-bottom-right-radius: 1px;
 `;
 
-export const IconSearch = styled(HiSearch).attrs(props => ({
+export const IconSearch = styled(HiSearch).attrs((props: PropsIconSearch) => ({
   color: secondaryDark(props),
 }))`
   width: ${moderateScale(8)}px;
   height: ${moderateScale(8)}px;
+
+  &.mobile {
+    ${inMobile(`
+      display: block;
+    `)}
+  }
+
+  ${inMobile(`
+    width: ${moderateScale(25)}px;
+    height: ${moderateScale(25)}px;
+  `)}
 `;
 
 export const IconAudio = styled(AiFillAudio).attrs(props => ({
@@ -150,6 +188,10 @@ export const IconCamera = styled(AiOutlineVideoCamera).attrs(props => ({
 }))`
   width: ${moderateScale(9)}px;
   height: ${moderateScale(10)}px;
+
+  ${inMobile(`
+    display: none;
+  `)}
 `;
 
 export const IconCube = styled(IoAppsSharp).attrs(props => ({
@@ -157,6 +199,10 @@ export const IconCube = styled(IoAppsSharp).attrs(props => ({
 }))`
   width: ${moderateScale(9)}px;
   height: ${moderateScale(10)}px;
+
+  ${inMobile(`
+    display: none;
+  `)}
 `;
 
 export const IconNotification = styled(IoMdNotifications).attrs(props => ({
@@ -164,6 +210,10 @@ export const IconNotification = styled(IoMdNotifications).attrs(props => ({
 }))`
   width: ${moderateScale(9)}px;
   height: ${moderateScale(10)}px;
+
+  ${inMobile(`
+    display: none;
+  `)}
 `;
 
 export const Avatar = styled.div`
@@ -172,4 +222,9 @@ export const Avatar = styled.div`
 
   border-radius: 50%;
   background: ${secondaryMain};
+
+  ${inMobile(`
+    width: ${moderateScale(30)}px;
+    height: ${moderateScale(30)}px;
+  `)}
 `;
