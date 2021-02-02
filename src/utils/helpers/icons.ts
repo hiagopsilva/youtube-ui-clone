@@ -6,6 +6,7 @@ import * as GrommetIcons from 'react-icons/gr';
 import * as AntDesignIcons from 'react-icons/ai';
 import * as IonIcons from 'react-icons/io5';
 import * as IoMdIcons from 'react-icons/io';
+import * as CGIcons from 'react-icons/cg';
 
 export {
   FontAwesome,
@@ -16,4 +17,5 @@ export {
   AntDesignIcons,
   IonIcons,
   IoMdIcons,
+  CGIcons,
 };
