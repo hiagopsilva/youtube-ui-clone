@@ -23,7 +23,7 @@ export default createGlobalStyle`
   input {
     outline: 0;
   }
-  button {
+  button, svg {
     cursor: pointer;
   }
 `;

@@ -13,8 +13,8 @@ export default {
     contrast: '#202020',
   },
   secondary: {
-    light: '',
-    main: '',
+    light: '#121212',
+    main: '#323232',
     dark: '#909090',
     contrast: '',
   },
