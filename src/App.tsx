@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, Menu } from '~/components';
+import { Header, Footer, Menu, WrapperCards } from '~/components';
 import { Content } from '~/styles';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Content>
         <Menu />
-        Youtube
+        <WrapperCards />
       </Content>
       <Footer />
     </>
