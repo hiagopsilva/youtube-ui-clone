@@ -40,6 +40,10 @@ export const Wrapper = styled.div`
   width: 100%;
   background: ${primaryContrast};
 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
