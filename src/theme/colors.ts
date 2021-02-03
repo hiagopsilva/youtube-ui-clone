@@ -19,8 +19,8 @@ export default {
     contrast: '#606060',
   },
   accent: {
-    light: '',
-    main: '',
+    light: '#AAAAAA',
+    main: 'rgba(0, 0, 0, 0.8)',
     dark: '',
     contrast: '',
   },
