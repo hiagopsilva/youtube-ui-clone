@@ -16,7 +16,7 @@ export default {
     light: '#121212',
     main: '#323232',
     dark: '#909090',
-    contrast: '',
+    contrast: '#606060',
   },
   accent: {
     light: '',
