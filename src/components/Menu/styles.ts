@@ -17,6 +17,7 @@ const primaryLight = getTheme('primary.light');
 const primaryContrast = getTheme('primary.contrast');
 const secondaryMain = getTheme('secondary.main');
 const secondaryDark = getTheme('secondary.dark');
+const secondaryContrast = getTheme('secondary.contrast');
 
 // Icons
 const { FaFire, FaPlayCircle } = FontAwesome;
@@ -48,6 +49,17 @@ export const Wrapper = styled.div`
 
   overflow-y: scroll;
   overflow-x: hidden;
+
+  ::-webkit-scrollbar-track {
+    background-color: ${primaryContrast};
+  }
+  ::-webkit-scrollbar {
+    width: ${moderateScale(4)}px;
+    background: ${secondaryContrast};
+  }
+  ::-webkit-scrollbar-thumb {
+    background: ${secondaryContrast};
+  }
 
   ${inMobile(`
     display: none;
