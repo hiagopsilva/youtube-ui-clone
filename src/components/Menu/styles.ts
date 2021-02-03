@@ -38,7 +38,7 @@ const {
 } = MaterialIcons;
 
 export const Wrapper = styled.div`
-  width: ${moderateScale(100)}px;
+  width: ${moderateScale(125)}px;
 
   background: ${primaryContrast};
 
