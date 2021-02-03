@@ -7,6 +7,7 @@ import * as AntDesignIcons from 'react-icons/ai';
 import * as IonIcons from 'react-icons/io5';
 import * as IoMdIcons from 'react-icons/io';
 import * as CGIcons from 'react-icons/cg';
+import * as BootstrapIcons from 'react-icons/bi';
 
 export {
   FontAwesome,
@@ -18,4 +19,5 @@ export {
   IonIcons,
   IoMdIcons,
   CGIcons,
+  BootstrapIcons,
 };

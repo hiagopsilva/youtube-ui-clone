@@ -1,13 +1,17 @@
 import React from 'react';
-import { Header, Footer } from '~/components';
+import { Header, Footer, Menu } from '~/components';
+import { Content } from '~/styles';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      Youtube
+      <Content>
+        <Menu />
+        Youtube
+      </Content>
       <Footer />
-    </div>
+    </>
   );
 }
 
