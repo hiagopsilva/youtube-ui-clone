@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getTheme, moderateScale } from '~/utils';
+import { getTheme, inMobile, moderateScale } from '~/utils';
 
 // Icons
 const primaryDark = getTheme('primary.dark');
@@ -40,4 +40,12 @@ export const Content = styled.div`
 
   flex-wrap: wrap;
   align-content: flex-start;
+
+  ${inMobile(`
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    justify-content: center;
+  `)}
 `;

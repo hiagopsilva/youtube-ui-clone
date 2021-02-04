@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { IoMdIcons, MaterialIcons, moderateScale, getTheme } from '~/utils';
+import {
+  IoMdIcons,
+  MaterialIcons,
+  moderateScale,
+  getTheme,
+  inMobile,
+} from '~/utils';
 import { BgCard, BgAvatarChannel } from '~/assets';
 
 // Colors
@@ -35,6 +41,11 @@ export const Wrapper = styled.div`
   &:hover {
     cursor: pointer;
   }
+
+  ${inMobile(`
+    width: 100%;
+    height: ${moderateScale(280)}px;
+  `)}
 `;
 
 export const Image = styled.div`
@@ -68,8 +79,18 @@ export const Image = styled.div`
       & + div {
         margin-top: ${buttonSpacing}px;
       }
+
+      ${inMobile(`
+       width: ${moderateScale(35)}px;
+       height: ${moderateScale(35)}px;
+      `)}
     }
   }
+
+  ${inMobile(`
+    width: 100%;
+    height: ${moderateScale(150)}px;
+  `)}
 `;
 
 export const Content = styled.div`
@@ -88,6 +109,11 @@ export const Avatar = styled.div`
   border-radius: 50%;
 
   margin: ${smallSpacing}px ${smallSpacing}px 0 0;
+
+  ${inMobile(`
+    width: ${moderateScale(55)}px;
+    height: ${moderateScale(55)}px;
+  `)}
 `;
 
 export const WrapperDescription = styled.div`
@@ -103,11 +129,19 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${inMobile(`
+    height: ${moderateScale(50)}px;
+  `)}
 `;
 
 export const Title = styled.h1`
   color: ${primaryLight};
   font-size: ${moderateScale(7)}px;
+
+  ${inMobile(`
+    font-size: ${moderateScale(20)}px; 
+  `)}
 `;
 
 export const IconDetails = styled(IoMdMore).attrs(props => ({
@@ -117,6 +151,11 @@ export const IconDetails = styled(IoMdMore).attrs(props => ({
   height: ${moderateScale(10)}px;
 
   display: none;
+
+  ${inMobile(`
+    width: ${moderateScale(35)}px;
+    height: ${moderateScale(35)}px;
+  `)}
 `;
 
 export const Author = styled.span`
@@ -136,6 +175,11 @@ export const IconTime = styled(MdAccessTime).attrs(props => ({
   height: ${moderateScale(9)}px;
 
   display: none;
+
+  ${inMobile(`
+    width: ${moderateScale(22)}px;
+    height: ${moderateScale(22)}px;
+  `)}
 `;
 
 export const IconList = styled(MdPlaylistPlay).attrs(props => ({
@@ -145,4 +189,9 @@ export const IconList = styled(MdPlaylistPlay).attrs(props => ({
   height: ${moderateScale(9)}px;
 
   display: none;
+
+  ${inMobile(`
+    width: ${moderateScale(22)}px;
+    height: ${moderateScale(22)}px;
+  `)}
 `;
