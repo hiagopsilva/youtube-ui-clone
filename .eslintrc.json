@@ -35,6 +35,20 @@
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
     "prettier/prettier": "error",
+    "react/jsx-wrap-multilines": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "camelcase": "off",
+    "@typescript-eslint/ban-types": "off",
+    "no-param-reassign": "off",
+    "consistent-return": "off",
+    "no-plusplus": "off",
+    "no-unresolved": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "no-console": "off",
+    "react/require-default-props": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -46,7 +60,11 @@
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {},
+      "babel-plugin-root-import": {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
     }
   }
 }
