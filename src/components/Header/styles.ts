@@ -227,8 +227,14 @@ export const Avatar = styled.div`
   border-radius: 50%;
   background: ${secondaryMain};
 
+  background-image: url('https://avatars.githubusercontent.com/u/47197695?s=460&u=2e7491adf00d02183572824bb43115820a04dfcc&v=4');
+  background-position: center;
+  background-size: cover;
+
+  cursor: pointer;
+
   ${inMobile(`
     width: ${moderateScale(30)}px;
     height: ${moderateScale(30)}px;
-  `)}
+  `)};
 `;

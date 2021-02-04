@@ -42,6 +42,7 @@
     "@typescript-eslint/ban-types": "off",
     "no-param-reassign": "off",
     "consistent-return": "off",
+    "no-plusplus": "off",
     "no-unresolved": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
