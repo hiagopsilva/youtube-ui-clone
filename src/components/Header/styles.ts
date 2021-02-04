@@ -168,6 +168,8 @@ export const IconSearch = styled(HiSearch).attrs((props: PropsIconSearch) => ({
   height: ${moderateScale(8)}px;
 
   &.mobile {
+    display: none;
+
     ${inMobile(`
       display: block;
     `)}

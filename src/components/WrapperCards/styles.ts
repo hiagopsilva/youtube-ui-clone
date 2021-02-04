@@ -31,6 +31,11 @@ export const Wrapper = styled.div`
   ::-webkit-scrollbar-thumb {
     background: ${secondaryContrast};
   }
+
+  ${inMobile(`
+    width: 100%;
+    height: 100%;
+  `)}
 `;
 
 export const Content = styled.div`
@@ -42,10 +47,13 @@ export const Content = styled.div`
   align-content: flex-start;
 
   ${inMobile(`
+    padding: ${moderateScale(20)}px ${moderateScale(15)}px
     width: 100%;
+    height: 100%;
+      
+    display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
-    align-items: flex-start;
-    justify-content: center;
+
+    flex-wrap: nowrap;
   `)}
 `;

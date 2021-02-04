@@ -45,6 +45,7 @@ export const Wrapper = styled.div`
   ${inMobile(`
     width: 100%;
     height: ${moderateScale(280)}px;
+    margin-bottom:  ${moderateScale(20)}px;
   `)}
 `;
 

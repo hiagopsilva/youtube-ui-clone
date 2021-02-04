@@ -21,7 +21,7 @@ const { MdSubscriptions, MdVideoLibrary, MdHome } = MaterialIcons;
 export const Wrapper = styled.div`
   bottom: 0;
   display: none;
-  position: fixed;
+  position: sticky;
   width: 100%;
   height: ${moderateScale(60)}px;
 
